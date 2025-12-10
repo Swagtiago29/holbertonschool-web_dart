@@ -21,7 +21,7 @@ class User extends Password {
 
   //convert User => Map
   Map toJson() {
-    return {"id": id, "name": name, "age": age, "height": height, "user_password": user_password};
+    return {"id": id, "name": name, "age": age, "height": height};
   }
 
   //convert Map => User
