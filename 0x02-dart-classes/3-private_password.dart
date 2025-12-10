@@ -1,11 +1,11 @@
-class Password{
+class Password {
   //properties
   String _password = "";
 
   //constructor
-
+  Password({required String password}) : _password = password;
   //methods
-  bool isValid(){
+  bool isValid() {
     final hasUpper = RegExp(r'[A-Z]').hasMatch(_password);
     final hasLower = RegExp(r'[a-z]').hasMatch(_password);
     final hasNum = RegExp(r'\d').hasMatch(_password);
@@ -15,7 +15,7 @@ class Password{
   }
 
   @override
-  String toString(){
+  String toString() {
     return "Your Password is: $_password";
   }
 }
