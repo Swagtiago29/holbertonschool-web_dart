@@ -14,8 +14,14 @@ class User {
   Map toJson() {
     return {"id": "$id", "name": "$name", "age": "$age", "height": "$height"};
   }
+
   //convert Map => User
   static User fromJson(Map<dynamic, dynamic> UserJson){
     return User(id: UserJson["id"], name: UserJson["name"], age: UserJson["age"], height: UserJson["height"]);
+  }
+
+  @override
+  String toString(){
+    return "User(id : $id ,name: $name, age: $age, height: $height)";
   }
 }
