@@ -3,7 +3,6 @@ class Password{
   String password = "";
 
   //constructor
-  Password({required this.password});
 
   //methods
   bool isValid(){
