@@ -9,7 +9,7 @@ class Password {
   String get password => _password ?? "";
 
   //setter
-  set password(String newPassword){
+  set password(String newPassword) {
     _password = newPassword;
   }
 
@@ -27,6 +27,6 @@ class Password {
 
   @override
   String toString() {
-    return "Your Password is: $_password";
+    return "Your Password is: ${_password ?? ""}";
   }
 }

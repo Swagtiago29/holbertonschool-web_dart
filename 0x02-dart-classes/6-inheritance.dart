@@ -7,7 +7,7 @@ class User extends Password {
   double height = 0;
   num id = 0;
   String user_password = "";
-
+  
   //CONSTRUCTOR
   User({
     required this.id,
@@ -37,6 +37,7 @@ class User extends Password {
 
   @override
   String toString() {
+    super.password = user_password;
     return "User(id : $id ,name: $name, age: $age, height: $height), password: ${isValid()}";
   }
 }
